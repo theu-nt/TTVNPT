@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".caidat">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarcaidat"
+        app:title="Cài đặt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="25sp"
+            android:layout_margin="10dp"
+            android:text="Cá nhân"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:textSize="20sp"
+            android:textColor="#00BCD4"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="200dp"
+            android:text="Sửa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/menu_seach"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:text="Tên hiển thị"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:text="Nguyễn Thêu"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:layout_marginTop="3dp"
+            android:textColor="#00BCD4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:text="Địa chỉ"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:text="Thái Bình"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:layout_marginTop="3dp"
+            android:textColor="#00BCD4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:text="Ngày sinh"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:text="01/10/1999"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:layout_marginTop="3dp"
+            android:textColor="#00BCD4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:text="Số thuê bao"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:text="087xxx"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:layout_marginTop="3dp"
+            android:textColor="#00BCD4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+    android:text="Ứng dụng"
+    android:textSize="20sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"></TextView>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/menu_seach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="Đăng ký nhận thông báo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Đã đăng ký"
+            android:textSize="15sp"
+            android:textColor="#00BCD4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+        <Switch
+            android:layout_marginLeft="340dp"
+            android:keepScreenOn="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Switch>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:text="Phiên bản"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:text="abc.xyz.123"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:layout_marginTop="3dp"
+            android:textColor="#00BCD4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="@drawable/menu_seach"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<TextView
+    android:id="@+id/tvtindiaphuong"
+    android:layout_margin="10dp"
+    android:text="Tin địa phương"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="Hà Nội"
+            android:id="@+id/tvdiaphuong"
+            android:textColor="#00BCD4"
+            android:layout_marginLeft="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="@drawable/menu_seach"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/chuyenmuc"
+            android:layout_margin="10dp"
+            android:text="Thay đổi chuyên mục của bạn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="8dp"
+            android:background="@drawable/menu_seach"
+            android:layout_margin="10dp"
+            android:text="Hủy gói"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:padding="8dp"
+            android:background="@drawable/menu_seach"
+            android:id="@+id/dieukhoan"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="Điều khoản"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/menu_seach"
+        android:text="Đăng xuất"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+
+</LinearLayout>

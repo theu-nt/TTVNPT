@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dieukhoan"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        app:title="Điều khoản"
+        app:titleTextColor="#00BCD4"
+        android:id="@+id/toolbardieukhoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="I. THỎA THUẬN SỬ DỤNG\nDiginews là trang thông tin tổng hợp, cung cấp nhanh nhất các thông tin xã hội, pháp luật, quân sự, thể thao giải trí,... từ hơn nhiều đầu báo uy tín tại Việt Nam\nTruy cập Diginews bạn có thể:\n
++ Cập nhật tin tức, dòng sự kiện, thời sự 24/7\n
++Nghe tin tức radio, xem video tin tức\nII. HƯỚNG DẪN SỬ DỤNG\n1. Các điều kiện chung\nDigiNews cung cấp thông tin cho khách hàng trên 15 tuổi. Để tham gia sử dụng dịch vụ của DigiNews, bạn chỉ cần đáp ứng các điều kiện sau đây để có thể đọc/xem các nội dung được đăng tải trên DigiNews\n- Thuê bao sử dụng máy điện thoại có hỗ trợ tính năng kết nối Internet.\n- Thuê bao đang trong vùng phủ sóng 3G/4G/wifi.\nIII. BẢO VỆ THÔNG TIN CÁ NHÂN KHÁCH HÀNG\nMọi sự thu thập thông tin và sử dụng thông tin của Khách hàng đều được thông qua ý kiến của chính Khách hàng đó trước khi Khách hàng tiến hành các giao dịch cụ thể. Việc bảo vệ thông tin cá nhân Khách hàng được thực hiện theo đúng nguyên tắc sau:\n1. Mục đích thu thập:\nViệc thu thập thông tin Khách hàng để:\n- Thực hiện các giao dịch của Khách hàng, giới thiệu về dịch vụ, tính năng của website DigiNews, chăm sóc Khách hàng;\n- Tính giá, cước sử dụng;\n- Quản lý việc đăng tải, bình luận của Khách hàng về giao dịch yêu cầu thực hiện;\n- Giải quyết các thắc mắc hay khiếu nại phát sinh khi Khách hàng sử dụng dịch vụ DigiNews; - Ngăn chặn những hoạt động vi phạm pháp luật tại website DigiNews.\n2. Thời gian lưu trữ: 05 năm\n3. Phạm vi sử dụng: chỉ sử dụng các thông tin được Khách hàng cung cấp trên website/app DigiNews, không sử dụng các thông tin do Khách hàng đưa trên các phương tiện, công cụ khác.\n4. Những đối tượng có thể tiếp nhận thông tin đã thu thập bao gồm:\n- Đơn vị chủ quản website/app DigiNews.\n- Cơ quan nhà nước có thẩm quyền khi có yêu cầu cụ thể.\n5. Cam kết bảo mật thông tin cá nhân của Khách hàng\n- Thông tin cá nhân của Khách hàng trên DigiNews được DigiNews cam kết bảo mật tuyệt đối theo chính sách bảo vệ thông tin cá nhân của Khách hàng. Việc thu thập và sử dụng thông tin của mỗi Khách hàng chỉ được thực hiện khi có sự đồng ý của Khách hàng đó trừ những trường hợp pháp luật có quy định khác;\n- Không sử dụng, không chuyển giao, cung cấp hay tiết lộ cho bên thứ 3 nào về thông tin cá nhân của Khách hàng khi không có sự cho phép đồng ý từ Khách hàng;\n- Trong trường hợp máy chủ lưu trữ thông tin bị hacker tấn công dẫn đến mất mát dữ liệu cá nhân Khách hàng, DigiNews sẽ có trách nhiệm thông báo vụ việc cho cơ quan chức năng điều tra xử lý kịp thời và thông báo cho Khách hàng được biết;\n- Tuy nhiên do hạn chế về mặt kỹ thuật, không một dữ liệu nào có thể được truyền trên đường truyền internet mà có thể được bảo mật 100%. Do vậy, DigiNews không thể đưa ra một cam kết chắc chắn rằng thông tin Khách hàng cung cấp cho DigiNews sẽ được bảo mật một cách tuyệt đối an toàn, và DigiNews không thể chịu trách nhiệm trong trường hợp có sự truy cập trái phép thông tin cá nhân của Khách hàng, như các trường hợp Khách hàng tự ý chia sẻ thông tin với người khác.
+"
+            android:textSize="17sp"></TextView>
+    </ScrollView>
+</LinearLayout>

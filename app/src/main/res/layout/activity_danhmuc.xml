@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".danhmuc">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarchuyenmuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Chuyên mục">
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/menu_seach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/TVthaydoichuyenmuc"
+            android:text="Thay đổi"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:textColor="#00BCD4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvdanhmuc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyThaydoiCM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+        </FrameLayout>
+        <TextView
+            android:id="@+id/TVthemchuyenmuc"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="+ Thêm chuyên mục"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/menu_seach"
+            android:backgroundTint="#00BCD4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+
+
+</LinearLayout>

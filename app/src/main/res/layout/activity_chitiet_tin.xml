@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".chitietTin">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <androidx.appcompat.widget.Toolbar
+        app:title="Chi tiết"
+        android:id="@+id/toolbarchitiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginLeft="200dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgmenu"
+            android:src="@drawable/menu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"></ImageView>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:text="Thêm 2 bệnh nhân COVID-19 khỏi bệnh, Việt Nam đã có 171 ca khỏi"
+        android:textSize="27sp"
+        android:id="@+id/tvtitle"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+    <LinearLayout
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/black"
+            android:text="Vnexpress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tvtime"
+            android:layout_marginLeft="10dp"
+            android:text="qwsdfg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgchitiet"
+        android:src="@drawable/cool"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"></ImageView>
+        <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/tvdescription"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:text="hahahah"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/tvcontent"
+
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recytukhoahotchitiet"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Tim mới nhất"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recychitiettin"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"></androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

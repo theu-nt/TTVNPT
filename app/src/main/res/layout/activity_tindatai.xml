@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tindatai"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbardsTin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@drawable/menu_seach"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_margin="5dp"
+                android:id="@+id/tenls"
+                android:textSize="20sp"
+                android:layout_width="300dp"
+                android:layout_height="25dp"></TextView>
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:background="@drawable/menu_seach"-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <TextView-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--            android:text="hahaha"-->
+<!--            android:id="@+id/tenls"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:padding="5dp"-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="wrap_content"></TextView>-->
+<!--        </LinearLayout>-->
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/anhtrong"
+        android:src="@drawable/anhtrong"
+        android:layout_marginLeft="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recylichsu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+<!--    <LinearLayout-->
+<!--        android:id="@+id/tinTai"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--    <TextView-->
+<!--        android:text="Hôm nay"-->
+<!--        android:layout_margin="6dp"-->
+<!--        android:textSize="20sp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"></TextView>-->
+<!--        <TextView-->
+<!--            android:text="Xóa toàn bộ"-->
+<!--            android:textColor="#03A9F4"-->
+<!--            android:layout_marginTop="6dp"-->
+<!--            android:layout_marginLeft="200dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"></TextView>-->
+<!--    </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            android:background="@drawable/menu_seach"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <ListView-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="320dp"></ListView>-->
+
+<!--</LinearLayout>-->
+    </FrameLayout>
+</LinearLayout>

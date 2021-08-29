@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_seach"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/edtk"
+                android:maxLines="1"
+                android:hint="Tìm kiếm"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"></EditText>
+
+
+            <ImageView
+                android:id="@+id/imgsearch"
+                android:layout_gravity="center"
+                android:src="@drawable/component"
+                android:layout_width="30dp"
+                android:layout_height="30dp"></ImageView>
+
+        </LinearLayout>
+
+
+
+
+<!--        <EditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:drawableEnd="@drawable/component"-->
+<!--            android:drawablePadding="10dp"-->
+<!--            android:background="@drawable/customsearch"-->
+<!--            android:ellipsize="end"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:gravity="start|center_vertical"-->
+<!--            android:padding="16dp"-->
+<!--            android:hint="Tìm kiếm"-->
+<!--            android:textColor="@color/black" />-->
+    </androidx.appcompat.widget.Toolbar>
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbarsearch"-->
+
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+
+<!--        >-->
+<!--        <LinearLayout-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_width="340dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/menu_seach">-->
+<!--                        <TextView-->
+<!--                            android:hint="Tìm kiếm"-->
+<!--                            android:layout_margin="5dp"-->
+
+<!--                            android:paddingLeft="5dp"-->
+<!--                            android:paddingTop="2dp"-->
+<!--                            android:textSize="20sp"-->
+<!--                            android:paddingBottom="2dp"-->
+<!--                            android:paddingRight="180dp"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content">-->
+<!--                        </TextView>-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_margin="5dp"-->
+<!--                            android:padding="2dp"-->
+<!--                            android:src="@drawable/component"-->
+<!--                            android:layout_width="25dp"-->
+<!--                            android:onClick="search"-->
+<!--                            android:layout_height="25dp"-->
+<!--                            ></ImageView>-->
+
+<!--        </LinearLayout>-->
+
+<!--    </androidx.appcompat.widget.Toolbar>-->
+
+
+
+<LinearLayout
+    android:background="@drawable/menu_seach"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    >
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Từ khóa HOT"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recytukhoahot"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
+<!--    <LinearLayout-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <TextView-->
+<!--            android:background="@drawable/menu_seach"-->
+<!--            android:id="@+id/tv1"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="Covid-19"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"></TextView>-->
+<!--        <TextView-->
+<!--            android:background="@drawable/menu_seach"-->
+<!--            android:id="@+id/tv2"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="Việt Nam covid"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"></TextView>-->
+<!--        <TextView-->
+<!--            android:background="@drawable/menu_seach"-->
+<!--            android:id="@+id/tv3"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="Virus"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"></TextView>-->
+<!--    </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <TextView-->
+<!--                android:background="@drawable/menu_seach"-->
+<!--                android:id="@+id/tv4"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:text="Prime"-->
+<!--                android:padding="10dp"-->
+<!--                android:textSize="15sp"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"></TextView>-->
+<!--            <TextView-->
+<!--                android:background="@drawable/menu_seach"-->
+<!--                android:id="@+id/tv5"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:text="Anthony Fauci"-->
+<!--                android:padding="10dp"-->
+<!--                android:textSize="15sp"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"></TextView>-->
+<!--            <TextView-->
+<!--                android:background="@drawable/menu_seach"-->
+<!--                android:id="@+id/tv6"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:text="Breakdown"-->
+<!--                android:padding="10dp"-->
+<!--                android:textSize="15sp"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"></TextView>-->
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <TextView-->
+<!--            android:background="@drawable/menu_seach"-->
+<!--            android:id="@+id/tv7"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="Wisconsin"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"></TextView>-->
+<!--        <TextView-->
+<!--            android:background="@drawable/menu_seach"-->
+<!--            android:id="@+id/tv8"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="Washington"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"></TextView>-->
+<!--        <TextView-->
+<!--            android:background="@drawable/menu_seach"-->
+<!--            android:id="@+id/tv9"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="Coronavirus"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"></TextView>-->
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <TextView-->
+<!--            android:background="@drawable/menu_seach"-->
+<!--            android:id="@+id/tv10"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="Nepal"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"></TextView>-->
+<!--        <TextView-->
+<!--            android:background="@drawable/menu_seach"-->
+<!--            android:id="@+id/tv11"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="Animal"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"></TextView>-->
+<!--        <TextView-->
+<!--            android:background="@drawable/menu_seach"-->
+<!--            android:id="@+id/tv12"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="Entertainment"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"></TextView>-->
+<!--    </LinearLayout>-->
+</LinearLayout>
+
+<LinearLayout
+    android:layout_margin="10dp"
+    android:background="@drawable/menu_seach"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+<TextView
+    android:layout_marginTop="10dp"
+    android:textStyle="bold"
+    android:textSize="30sp"
+    android:text="Tìm kiếm gần đây"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"></TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recytimkiemganday"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <TextView-->
+<!--            android:background="@drawable/menu_seach"-->
+<!--            android:id="@+id/ls1"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="Covid-19"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"></TextView>-->
+<!--        <TextView-->
+<!--            android:background="@drawable/menu_seach"-->
+<!--            android:id="@+id/ls2"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="Việt Nam covid"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"></TextView>-->
+<!--        <TextView-->
+<!--            android:background="@drawable/menu_seach"-->
+<!--            android:id="@+id/ls3"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="Virus"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"></TextView>-->
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_marginTop="21dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <TextView-->
+<!--            android:background="@drawable/menu_seach"-->
+<!--            android:id="@+id/ls4"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="Prime"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"></TextView>-->
+<!--        <TextView-->
+<!--            android:background="@drawable/menu_seach"-->
+<!--            android:id="@+id/ls5"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="Anthony Fauci"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"></TextView>-->
+<!--        <TextView-->
+<!--            android:background="@drawable/menu_seach"-->
+<!--            android:id="@+id/ls6"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="Breakdown"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"></TextView>-->
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <TextView-->
+<!--            android:background="@drawable/menu_seach"-->
+<!--            android:id="@+id/ls7"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="Wisconsin"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"></TextView>-->
+<!--        <TextView-->
+<!--            android:background="@drawable/menu_seach"-->
+<!--            android:id="@+id/ls8"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="Washington"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"></TextView>-->
+<!--        <TextView-->
+<!--            android:background="@drawable/menu_seach"-->
+<!--            android:id="@+id/ls9"-->
+<!--            android:layout_marginLeft="12dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="Coronavirus"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"></TextView>-->
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <TextView-->
+<!--            android:background="@drawable/menu_seach"-->
+<!--            android:id="@+id/ls10"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="Nepal"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"></TextView>-->
+<!--        <TextView-->
+<!--            android:background="@drawable/menu_seach"-->
+<!--            android:id="@+id/ls11"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="Animal"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"></TextView>-->
+<!--        <TextView-->
+<!--            android:background="@drawable/menu_seach"-->
+<!--            android:id="@+id/ls12"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="Entertainment"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"></TextView>-->
+<!--    </LinearLayout>-->
+</LinearLayout>
+
+
+
+</LinearLayout>
